@@ -1,0 +1,35 @@
+{
+  "name": "iamryansu",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/isRyanSu/iamryansu",
+  "bugs": {
+    "url": "https://github.com/isRyanSu/iamryansu/issues",
+    "email": "iamryansu@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isRyanSu/iamryansu.git"
+  },
+  "license": "MIT",
+  "author": "Ryan Su <iamryansu@icloud.com> (https://github.com/isRyanSu)",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "check-types": "turbo run check-types",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "2.5.0"
+  },
+  "packageManager": "bun@1.2.9",
+  "engines": {
+    "node": ">=22"
+  }
+}

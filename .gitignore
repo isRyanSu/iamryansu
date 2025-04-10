@@ -1,0 +1,20 @@
+# Build Outputs
+.next/
+dist/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Misc
+.DS_Store
+
+# Turborepo
+.turbo/
+
+# TypeScript
+*.tsbuildinfo
