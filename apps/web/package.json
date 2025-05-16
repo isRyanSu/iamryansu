@@ -1,0 +1,78 @@
+{
+  "name": "@iamryansu/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/isRyanSu/iamryansu/tree/main/apps/web#readme",
+  "bugs": {
+    "url": "https://github.com/isRyanSu/iamryansu/issues",
+    "email": "iamryansu@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isRyanSu/iamryansu.git",
+    "directory": "apps/web"
+  },
+  "license": "MIT",
+  "author": "Ryan Su <iamryansu@icloud.com> (https://github.com/isRyanSu)",
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check-types": "tsc",
+    "clean": "rm -rf .next .turbo dist node_modules *.tsbuildinfo",
+    "cms:generate:db-schema": "payload generate:db-schema",
+    "cms:generate:importmap": "payload generate:importmap",
+    "cms:generate:types": "payload generate:types",
+    "cms:migrate": "payload migrate",
+    "cms:migrate:create": "payload migrate:create",
+    "cms:migrate:down": "payload migrate:down",
+    "cms:migrate:fresh": "payload migrate:fresh",
+    "cms:migrate:refresh": "payload migrate:refresh",
+    "cms:migrate:reset": "payload migrate:reset",
+    "cms:migrate:status": "payload migrate:status",
+    "dev": "next dev",
+    "format": "prettier --check --ignore-unknown .",
+    "format:write": "prettier --write --ignore-unknown .",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "payload": "payload",
+    "start": "next start",
+    "style": "stylelint --color --aei \"**/*.css\"",
+    "style:fix": "stylelint --fix --color --aei \"**/*.css\""
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "3.38.0",
+    "@payloadcms/next": "3.38.0",
+    "@payloadcms/richtext-lexical": "3.38.0",
+    "@t3-oss/env-nextjs": "0.13.4",
+    "clsx": "2.1.1",
+    "next": "15.3.2",
+    "payload": "3.38.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sharp": "0.34.1",
+    "tailwind-merge": "3.3.0",
+    "zod": "3.24.4"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "15.3.2",
+    "@tailwindcss/postcss": "4.1.7",
+    "@types/react": "19.1.4",
+    "@types/react-dom": "19.1.5",
+    "eslint-config-next": "15.3.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "jiti": "2.4.2",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "stylelint": "16.19.1",
+    "stylelint-config-clean-order": "7.0.0",
+    "stylelint-config-standard": "38.0.0",
+    "stylelint-config-tailwindcss": "1.0.0",
+    "tailwindcss": "4.1.7"
+  },
+  "packageManager": "bun@1.2.13",
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  }
+}

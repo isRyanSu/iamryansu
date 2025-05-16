@@ -1,0 +1,12 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "env": ["CMS_DATABASE_URL", "CMS_SECRET", "SKIP_ENV_VALIDATION"]
+    },
+    "dev": {
+      "env": ["CMS_DATABASE_URL", "CMS_SECRET"]
+    }
+  }
+}

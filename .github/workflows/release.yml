@@ -31,6 +31,14 @@ jobs:
       - name: 🏗️ Build Everything
         run: bun run build
 
+      - name: 💽 Migrate Database
+        run: |
+          cd apps/web
+          bun run cms:migrate
+        env:
+          CMS_DATABASE_URL: ${{ secrets.CMS_DATABASE_URL }}
+          CMS_SECRET: ${{ secrets.CMS_SECRET }}
+
       - name: 🚀 Create Release Pull Request and Publish to npm
         id: changesets
         uses: changesets/action@v1
