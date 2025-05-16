@@ -1,0 +1,33 @@
+# Build Outputs
+build
+dist
+out
+
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+
+# Husky
+.husky
+
+# Next.js
+.next
+next-env.d.ts
+
+# Misc
+.DS_Store
+*.pem
+
+# Testing
+coverage
+
+# Turborepo
+.turbo
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel

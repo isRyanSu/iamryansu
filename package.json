@@ -1,0 +1,73 @@
+{
+  "name": "iamryansu",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/isRyanSu/iamryansu",
+  "bugs": {
+    "url": "https://github.com/isRyanSu/iamryansu/issues",
+    "email": "iamryansu@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isRyanSu/iamryansu.git"
+  },
+  "license": "MIT",
+  "author": "Ryan Su <iamryansu@icloud.com> (https://github.com/isRyanSu)",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "check-spells": "cspell --color --no-must-find-files --no-progress --no-summary --show-suggestions \"**/*.{html,css,js,ts,jsx,tsx,json,md,mdx,yml}\"",
+    "check-types": "turbo run check-types",
+    "clean": "turbo run clean && rm -rf .turbo node_modules",
+    "commit": "gitmoji -c",
+    "dev": "turbo run dev",
+    "format": "turbo run format && prettier --check --ignore-unknown .",
+    "format:write": "turbo run format:write && prettier --write --ignore-unknown .",
+    "lint": "turbo run lint && eslint \"*.{js,ts}\"",
+    "lint:fix": "turbo run lint:fix && eslint --fix \"*.{js,ts}\"",
+    "prepare": "husky",
+    "style": "turbo run style",
+    "style:fix": "turbo run style:fix"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.1",
+    "@changesets/cli": "2.29.4",
+    "@eslint/js": "9.26.0",
+    "@types/node": "22.15.18",
+    "cspell": "9.0.1",
+    "eslint": "9.26.0",
+    "eslint-config-prettier": "10.1.5",
+    "eslint-plugin-perfectionist": "4.13.0",
+    "eslint-plugin-turbo": "2.5.3",
+    "eslint-plugin-unicorn": "59.0.1",
+    "gitmoji-cli": "9.7.0",
+    "globals": "16.1.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.0.0",
+    "prettier": "3.5.3",
+    "prettier-plugin-packagejson": "2.5.13",
+    "prettier-plugin-sh": "0.17.4",
+    "prettier-plugin-sort-json": "4.1.1",
+    "turbo": "2.5.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.32.1"
+  },
+  "packageManager": "bun@1.2.13",
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  },
+  "gitmoji": {
+    "autoAdd": false,
+    "capitalizeTitle": false,
+    "emojiFormat": "emoji",
+    "gitmojisUrl": "https://gitmoji.dev/api/gitmojis",
+    "messagePrompt": false,
+    "scopePrompt": true
+  }
+}
