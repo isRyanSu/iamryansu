@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    /* Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@payload-config": ["src/cms/payload.config.ts"],
+      "@/*": ["src/*"]
+    },
+
+    /* Base */
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "verbatimModuleSyntax": true,
+
+    /* Strictness */
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* If NOT transpiling with TypeScript */
+    "module": "Preserve",
+    "noEmit": true,
+
+    /* If your code runs in the DOM */
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+
+    /* Plugins */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "exclude": ["node_modules/**", "src/cms/migrations/**"],
+  "include": [".next/types/**/*.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
